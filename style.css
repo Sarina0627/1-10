@@ -1,0 +1,118 @@
+
+/* リセットCSS */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+main{
+  width:960px;
+  margin: 50px auto;
+}
+
+.main-contents{
+  width:300px;
+  border: 1px solid #eee;
+  float: left;
+  margin-right:30px;
+  position: relative;
+}
+
+.main-contents:last-child{
+  margin-right: 0;
+}
+
+
+
+.img1{
+  background-image: url(img/flow01.png);
+  width:280px;
+  height:150px;
+  background-size: cover;
+  background-position: bottom;
+  margin: 10px;
+}
+
+.img2{
+  background-image: url(img/flow02.png);
+  width:280px;
+  height:150px;
+  background-size: cover;
+  background-position: bottom;
+  margin: 10px;
+}
+
+.img3{
+  background-image: url(img/flow03.png);
+  width:280px;
+  height:150px;
+  background-size: cover;
+  background-position: bottom;
+  margin: 10px;
+}
+
+.step{
+  color:#fff;
+  background-color: #fd7e00;
+  text-align: center;
+  position: absolute;
+  top:0;
+  left:0;
+  padding: 2px;
+}
+
+.text-content{
+  width:280px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width:768px) {
+  main{
+    width:100%;
+    margin: 10% auto;
+  }
+
+  .main-contents{
+    float: none;
+    width: 90%;
+    height: auto;
+    margin: 5% auto;
+  }
+
+  .main-contents:last-child{
+    margin: 0 auto;
+  }
+
+   .img1{
+     width: 90%;
+     margin: 10px auto;
+   }
+
+   .img2{
+     width: 90%;
+     margin: 10px auto;
+   }
+
+   .img3{
+     width: 90%;
+     margin: 10px auto;
+   }
+
+  .text-content{
+    width:90%;
+  }
+
+
+}
